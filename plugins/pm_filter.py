@@ -35,7 +35,7 @@ async def aks_downloader(bot, query):
         reply_markup=InlineKeyboardMarkup(btn)
     )
 
-@Client.on_message(filters.group & filters.text & filters.incoming)
+@Client.on_message(filters.group | filters.private & filters.text & filters.incoming)
 async def give_filter(client, message):
     settings = await get_settings(message.chat.id)
     if settings["auto_filter"]:
@@ -484,10 +484,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "my_about":
         buttons = [[
-            InlineKeyboardButton('📊 sᴛᴀᴛᴜs', callback_data='stats'),
-            InlineKeyboardButton('🔋 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='source')
+            InlineKeyboardButton('♻️ Status', callback_data='stats')
         ],[
-            InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -555,10 +554,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('User Command', callback_data='user_command'),
-            InlineKeyboardButton('Admin Command', callback_data='admin_command')
+            InlineKeyboardButton('🦉 User Command', callback_data='user_command'),
+            InlineKeyboardButton('🦹 Admin Command', callback_data='admin_command')
         ],[
-            InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start')
+            InlineKeyboardButton('🌧️ Sticker', callback_data='sticker'),
+            InlineKeyboardButton('🚀 Telegraph', callback_data='tele'),
+            InlineKeyboardButton('⚡ Fancy Font', callback_data='source') 
+         ], [
+            InlineKeyboardButton('🎨 GitHub Repo', callback_data='removebgx'), 
+             InlineKeyboardButton('🌐 Open Al', callback_data='openai') 
+         ], [
+            InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
