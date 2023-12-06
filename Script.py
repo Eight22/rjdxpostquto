@@ -127,7 +127,6 @@ I can't find the <b>{}</b> in my database! 🥲
 
     FILE_CAPTION = """<b>📂 {file_name}
 <b>♻️ Size: {file_size}</b>
-<b>♻️ Quality: {quality}</b>
 <b>⚡ Powered By:- @UncutFile
 
 🚫 ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴄʟᴏsᴇ ʙᴜᴛᴛᴏɴ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ sᴇᴇɴ ᴛʜᴇ ᴍᴏᴠɪᴇ 🚫"""
