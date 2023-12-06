@@ -14,12 +14,48 @@ class script(object):
 ★ ID: <code>5493832202</code>
 ★ Country: Sri Lanka 🇱🇰"""
 
-    STATUS_TXT = """🗂 Total Files: <code>{}</code>
-👤 Total Users: <code>{}</code>
-👥 Total Chats: <code>{}</code>
-✨ Storage: <code>{}</code> / <code>{}</code>
-🚀 Uptime: <code>{}</code>"""
+    STATUS_TXT = """🗃️ Total Files: <code>{}</code>
+👪 Total Users: <code>{}</code>
+💬 Total Chats: <code>{}</code>
+📂 Used Storage: <code>{}</code>
+🗂 Free Storage: <code>{}</code>
+⏰ Uptime: <code>{}</code>"""
 
+    OPENAI_TXT = """<b>Find Solution To Any Question With ChatGPT. 
+  
+ Commands And Usage: 
+  /OpenAI Your Question  
+  
+ Note: 
+ * This Feature Work Only Support Group.</b>"""
+
+    TELE_TXT = """<b>You Can Use This Feature To Upload Image On Telegraph 
+
+ • /telegraph - Send Me Picture Or Video Under 5MB.</b>""" 
+
+    REMOVEBGX_TXT = """
+You Can Use This Feature To Search GitHub Repo.
+
+<b>Feature:</b>
+
+ /repo: <b>Use This Commands To Search Github Repo</b> 
+ Example:<code>/repo auto filter...</code> 
+</b>"""
+    
+    URLSHORT_TXT = """<b>You Can Use This Feature To Meke Short URL. 
+  
+ Commands And Usage: 
+  
+ /short: <b>Use This Commands With Your Link To Get Short Links</b> 
+ Example:<code>/short https://youtu.be/example...</code> 
+</b>"""
+    
+    STICKER_TXT = """<b>You Can Use This Feature To Find Any Stickers ID.  
+   
+ ⭕ How To Use
+ ◉ /stickerid  Reply To Any Sticker With This Commands
+ </b>"""
+    
     NEW_GROUP_TXT = """#NewGroup
 Title - {}
 ID - <code>{}</code>
@@ -90,7 +126,10 @@ I can't find the <b>{}</b> in my database! 🥲
 🗣 Requested by: {message.from_user.mention}
 ©️ Powered by: <b>{message.chat.title}</b>"""
 
-    FILE_CAPTION = """<i>{file_name}</i>
+    FILE_CAPTION = """<b>📂 {file_name}
+<b>♻️ Size: {file_size}</b>
+<b>♻️ Quality: {quality}</b>
+<b>⚡ Powered By:- @UncutFile
 
 🚫 ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴄʟᴏsᴇ ʙᴜᴛᴛᴏɴ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ sᴇᴇɴ ᴛʜᴇ ᴍᴏᴠɪᴇ 🚫"""
 
@@ -130,12 +169,9 @@ I can't find the <b>{}</b> in my database! 🥲
 /id - to check group or channel id
 /openai - Find solution to any question with ChatGPT</b>"""
 
-    SOURCE_TXT = """<b>ʙᴏᴛ ɢɪᴛʜᴜʙ ʀᴇᴘᴏsɪᴛᴏʀʏ -
-
-- ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
-
-- ꜱᴏᴜʀᴄᴇ - <a href=https://github.com/HansakaAnuhas-TG/AutoFilterBot-Beta>ʜᴇʀᴇ</a>
-
-ᴅᴇᴠʟᴏᴘᴇʀ -
-<a href=https://telegram.me/Hansaka_Anuhas>ʜᴀɴsᴀᴋᴀ</a>
-<a href=https://telegram.me/Technicalaks123>ᴀᴋs</a></b>"""
+    SOURCE_TXT = """<b>You Can Use This Feature To Change Font Style   
+  
+ ⚡️ /font Your Text
+ Example:- /font TeamYourX 
+  
+ </b>""" 
