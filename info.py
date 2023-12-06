@@ -39,9 +39,9 @@ else:
     ADMINS = [int(admins) for admins in ADMINS.split()]
 
 # Channels
-INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1001832009202').split()]
+INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1002017449618').split()]
 AUTH_CHANNEL = [int(auth_channels) for auth_channels in environ.get('AUTH_CHANNEL', '').split()]
-LOG_CHANNEL = environ.get('LOG_CHANNEL', '')
+LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1001832009202')
 if len(LOG_CHANNEL) == 0:
     print('LOG_CHANNEL is missing, exiting now')
     exit()
